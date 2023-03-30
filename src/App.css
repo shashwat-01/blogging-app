@@ -1,38 +1,339 @@
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  padding: 0%;
+  margin: 0%;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+nav {
+  margin: 0;
+  width: 100%;
+  background-color:#fff;
+  height: 60px;
+  display: flex;
+  /* justify-content: center; */
+  justify-content: space-between;
+  
+  align-items: center;
+  color: #333;
+  text-decoration: none;
+  border-bottom: 2px solid #888;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+a {
+  color: #333;
+  text-decoration: none;
+  margin: 10px 16px 10px 16px;
+  font-size: 20px;
+  transition: all 0.3s ease;
+}
+
+a:hover{
+  color: #007bff;
+}
+
+.createPostPage {
+  width: 100%;
+  height: calc(100vh - 80px);
+  display: grid;
+  place-items: center;
+}
+
+.cpContainer {
+  /* width: 500px;
+  height: auto;
+  padding: 20px;
+  background-color: rgb(59, 59, 59);
+  border-radius: 12px;
+  color: white;
+  display: flex;
+  flex-direction: column; */
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: 5% auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+.cpContainer h2 {
+  margin: 0 0 20px;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  color: #333;
+}
+
+.cpContainer label {
+  font-size: 20px;
+}
+
+/* .cpContainer .inputGp {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+} */
+
+/* .inputGp input,
+.inputGp textarea {
+  font-size: 18px;
+  border: none;
+  border-radius: 2px;
+  padding: 5px;
+} */
+
+/* .inputGp input,.inputGp textarea  {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f3f3f3;
+  font-size: 18px;
+  color: #333; 
+} */
+
+
+.cpContainer button {
+  /* margin-top: 20px;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px; */
+  display: inline-block;
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  margin-top: 20px
+}
+
+.cpContainer button:hover{
+  background-color: #0056b3;
+}
+input,
+textarea {
+  margin-top: 5px;
+  display: block;
+  width: 98%;
+  padding:1%;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f3f3f3;
+  font-size: 18px;
+  color: #333;
+  outline: none;
+}
+
+
+textarea{
+  height: 200px;
+}
+
+.loginPage {
+  width: 100vw;
+  height: calc(100vh - 80px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.loginPage p {
+  font-size: 30px;
+}
+
+.logout {
+  background-color: #fff;
+  color: #333;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin: 10px 10px;
+  border-color: #007bff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.login-btn{
+  background-color: #fff;
+  color: #fff;
+  padding: 10px 20px;
+  /* border-radius: 5px;
+  border-color: #44ca63; */
+  border: none;
+  margin: 10px 10px;
+
+  background-color: #44ca63;
+  border-radius: 5px;
+
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.logout:hover{
+  background-color: #007bff;
+  color: #fff;
+  
+}
+
+.login-btn:hover{
+  background-color: #269c42;  
+}
+
+/* GOOGLE BUTTOn */
+.login-with-google-btn {
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  padding: 5px 16px 12px 42px;
+  border: none;
+  border-radius: 3px;
+  box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.04), 0 1px 1px rgba(0, 0, 0, 0.25);
+  color: #757575;
+  font-size: 25px;
+  font-weight: 500;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgiIGhlaWdodD0iMTgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj48cGF0aCBkPSJNMTcuNiA5LjJsLS4xLTEuOEg5djMuNGg0LjhDMTMuNiAxMiAxMyAxMyAxMiAxMy42djIuMmgzYTguOCA4LjggMCAwIDAgMi42LTYuNnoiIGZpbGw9IiM0Mjg1RjQiIGZpbGwtcnVsZT0ibm9uemVybyIvPjxwYXRoIGQ9Ik05IDE4YzIuNCAwIDQuNS0uOCA2LTIuMmwtMy0yLjJhNS40IDUuNCAwIDAgMS04LTIuOUgxVjEzYTkgOSAwIDAgMCA4IDV6IiBmaWxsPSIjMzRBODUzIiBmaWxsLXJ1bGU9Im5vbnplcm8iLz48cGF0aCBkPSJNNCAxMC43YTUuNCA1LjQgMCAwIDEgMC0zLjRWNUgxYTkgOSAwIDAgMCAwIDhsMy0yLjN6IiBmaWxsPSIjRkJCQzA1IiBmaWxsLXJ1bGU9Im5vbnplcm8iLz48cGF0aCBkPSJNOSAzLjZjMS4zIDAgMi41LjQgMy40IDEuM0wxNSAyLjNBOSA5IDAgMCAwIDEgNWwzIDIuNGE1LjQgNS40IDAgMCAxIDUtMy43eiIgZmlsbD0iI0VBNDMzNSIgZmlsbC1ydWxlPSJub256ZXJvIi8+PHBhdGggZD0iTTAgMGgxOHYxOEgweiIvPjwvZz48L3N2Zz4=);
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position: 12px 11px;
+}
+.login-with-google-btn:hover {
+  box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.04), 0 2px 4px rgba(0, 0, 0, 0.25);
+}
+.login-with-google-btn:active {
+  background-color: #eeeeee;
+}
+.login-with-google-btn:focus {
+  outline: none;
+  box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.04), 0 2px 4px rgba(0, 0, 0, 0.25),
+    0 0 0 3px #c8dafc;
+}
+.login-with-google-btn:disabled {
+  filter: grayscale(100%);
+  background-color: #ebebeb;
+  box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.04), 0 1px 1px rgba(0, 0, 0, 0.25);
+  cursor: not-allowed;
+}
+
+.homePage {
+  width: 100%;
+  min-height: calc(100vh - 80px);
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 20px;
+  background-color: #fff;
+  
+}
+
+.homePage .post {
+  /* width: 600px;
+  height: auto;
+  max-height: 600px;
+  background-color: rgb(250, 250, 250);
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+
+  
+  width: 600px;
+  height: auto;
+  max-height: 800px;
+  background-color: #fff;
+
+  border-radius: 8px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+  margin: 20px;
+  padding: 20px;
+  transition: box-shadow 0.3s ease;
+}
+
+.homePage .post:hover{
+  box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.2);
+}
+
+.post .postHeader {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 100%;
+  
 }
 
-.App-link {
-  color: #61dafb;
+.postHeader .title {
+  flex: 50%;
+  padding: 0 20px 0px 20px;
+  color: #333;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.postHeader .deletePost {
+  flex: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
+
+.deletePost button {
+  border: none;
+  padding-top: 10px;
+  background: none;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+
+.post .postTextContainer {
+  /* word-wrap: break-word;
+  height: auto;
+  max-height: 400px;
+  width: 100%;
+  overflow: hidden;
+  overflow-y: auto; */
+  color: #555;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 0 20px 20px 20px;
+  text-align: justify;
+}
+
+.post .author{
+  align-items: center;
+  display: flex;
+  font-size: 14px;
+  margin: 20px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: #888;
+  justify-content: center;
+  text-align: center;
+}
+
+

@@ -42,14 +42,7 @@ a:hover{
 }
 
 .cpContainer {
-  /* width: 500px;
-  height: auto;
-  padding: 20px;
-  background-color: rgb(59, 59, 59);
-  border-radius: 12px;
-  color: white;
-  display: flex;
-  flex-direction: column; */
+
   display: flex;
   flex-direction: column;
   max-width: 600px;
@@ -57,7 +50,7 @@ a:hover{
   padding: 20px;
   background-color: #fff;
   border-radius: 10px;
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
 }
 
 .cpContainer h2 {
@@ -72,40 +65,10 @@ a:hover{
   font-size: 20px;
 }
 
-/* .cpContainer .inputGp {
-  margin-top: 30px;
-  display: flex;
-  flex-direction: column;
-} */
-
-/* .inputGp input,
-.inputGp textarea {
-  font-size: 18px;
-  border: none;
-  border-radius: 2px;
-  padding: 5px;
-} */
-
-/* .inputGp input,.inputGp textarea  {
-  display: block;
-  width: 100%;
-  padding: 15px;
-  margin-bottom: 20px;
-  border: none;
-  border-radius: 5px;
-  background-color: #f3f3f3;
-  font-size: 18px;
-  color: #333; 
-} */
 
 
 .cpContainer button {
-  /* margin-top: 20px;
-  height: 40px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 18px; */
+
   display: inline-block;
   width: 100%;
   padding: 12px;
@@ -247,15 +210,6 @@ textarea{
 }
 
 .homePage .post {
-  /* width: 600px;
-  height: auto;
-  max-height: 600px;
-  background-color: rgb(250, 250, 250);
-  margin: 20px;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
-
   
   width: 600px;
   height: auto;
@@ -307,12 +261,6 @@ textarea{
 
 
 .post .postTextContainer {
-  /* word-wrap: break-word;
-  height: auto;
-  max-height: 400px;
-  width: 100%;
-  overflow: hidden;
-  overflow-y: auto; */
   color: #555;
   font-size: 16px;
   line-height: 1.5;
